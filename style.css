@@ -60,7 +60,8 @@ div.container {
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: inner_spinner 2s linear infinite;
+  animation: spinner 800ms linear infinite;
+  animation-direction: reverse;
 }
 
 @keyframes spinner {
@@ -69,15 +70,6 @@ div.container {
   }
   to {
     rotate: 360deg;
-  }
-}
-
-@keyframes inner_spinner {
-  from {
-    rotate: 0deg;
-  }
-  to {
-    rotate: 720deg;
   }
 }
 
